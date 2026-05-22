@@ -41,3 +41,13 @@ function checkPassword() {
 
     document.getElementById("result").innerText = result;
 }
+
+function togglePassword() {
+    let input = document.getElementById("password");
+
+    if (input.type === "password") {
+        input.type = "text";
+    } else {
+        input.type = "password";
+    }
+}

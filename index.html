@@ -9,7 +9,10 @@
 <body>
     <div class="container">
         <h1> Password Strength Checker </h1>
-        <input type="password" id="password" placeholder="Enter your password">
+        <div class="password-box">
+            <input type="password" id="password" placeholder="Enter your password">
+            <span id="togglePassword" onclick="togglePassword()">👁️</span>
+        </div>
         <button onclick="checkPassword()">Check Strength</button>
         <div id="result"></div>
     </div>
